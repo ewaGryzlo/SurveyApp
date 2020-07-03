@@ -11,20 +11,17 @@ exports.getAddSurvey = (req, res, next) => {
 
 exports.postAddSurvey = (req, res, next) => {
     console.log(req.body);
-    res.status(200).send("ok");
-    const title = req.body.title;
-    const question = req.body.question;
-    const answer = req.body.answer;
     const survey = {
-        title: title,
-        question: question,
-        answer: answer
+        title: req.body.questionnaireTitle,
+        questions: req.body.questionnaireBody
     };
      new Survey(survey)
     .save()
          .then(result =>{
             console.log('Created Survey');
-
+             res.status(200).send({
+                 status: "ok"
+             });
         })
         .catch(err =>{
             console.log(err);

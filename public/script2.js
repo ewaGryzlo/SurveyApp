@@ -64,8 +64,9 @@ function deleteResponse(clickedElement){
 
 function getQuestionnaireForm () {
     let questionsInForm = form.getElementsByClassName('questionAnswer-container');
+    let title = form.getElementsByClassName('title__input')[0].value;
 
-    let result = [];
+    let questionsResult = [];
     for (let i = 0; i < questionsInForm.length; i++) {
         let res = getQuestionResponses(questionsInForm[i]);
         // check if validation go thru
@@ -73,31 +74,37 @@ function getQuestionnaireForm () {
             displayValidationErrors();
             return;
         } else {
-            result.push(getQuestionResponses(questionsInForm[i]));
-
+            questionsResult.push(getQuestionResponses(questionsInForm[i]));
         }
     }
 
+    const results = {
+        questionnaireTitle: title,
+        questionnaireBody: questionsResult
+    };
     //result to save to database
     const options = {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(result)
-
+        body: JSON.stringify(results)
     };
-    console.log(result);
+
     fetch('http://localhost:3000/survey2',options)
-        .then(response => console.log(response))
-
-
+        .then(response => {
+            if (response.status === 200) {
+                alert('Dodano ankietę');
+                window.location.replace("/homepage");
+            } else {
+                console.error(response);
+            }
+        })
 }
 
 function getQuestionResponses(questionContainer){
     const questionInput = questionContainer.getElementsByClassName('question__input');
     const responseInputs = questionContainer.getElementsByClassName('response__input');
-    const titleInput = questionContainer.getElementsByClassName('title__input');
 
     // check input with question
     if (!isBlankValidator(questionInput[0].value)) {
@@ -119,7 +126,6 @@ function getQuestionResponses(questionContainer){
     }
 
     return  {
-        'title': titleInput, //titleInput[0].value tu pokazuje zawartosc, inaczej tytul to  0, ale przy [0].value nie fetchuje juz drugiego pytania
         'question': questionInput[0].value,
         'responses': responsesForQuestion
     };

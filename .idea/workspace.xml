@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="838dd57f-4243-4da2-9463-2056bd54840e" name="Default Changelist" comment="" />
+    <list default="true" id="838dd57f-4243-4da2-9463-2056bd54840e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/survey2.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/survey2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Surveys.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Surveys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/script2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/script2.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,7 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -59,18 +62,6 @@
       <recent name="C:\Users\ADMIN\Desktop\Projekt\public" />
       <recent name="C:\Users\ADMIN\Desktop\Projekt" />
     </key>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -98,11 +89,12 @@
       <workItem from="1592936042540" duration="8316000" />
       <workItem from="1592996099272" duration="738000" />
       <workItem from="1592997081310" duration="17157000" />
+      <workItem from="1593602632576" duration="2008000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="322" y="681" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591216565894">
@@ -142,19 +134,33 @@
     </state>
     <state x="564" y="302" key="SettingsEditor/0.0.2560.1400/-1920.197.1920.1040@0.0.2560.1400" timestamp="1592436955859" />
     <state x="783" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591808827542" />
-    <state x="823" y="315" width="606" height="789" key="find.popup" timestamp="1591447662516">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593604297902">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.-524.1440.2520/0.0.2560.1400@0.0.2560.1400" timestamp="1593604297902" />
+    <state x="1041" y="303" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593603505168">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1041" y="303" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/2560.-524.1440.2520/0.0.2560.1400@0.0.2560.1400" timestamp="1593603505168" />
+    <state x="2560" y="-469" width="1456" height="1387" key="dock-window-1" timestamp="1593604075295">
+      <screen x="2560" y="-524" width="1440" height="2520" />
+    </state>
+    <state x="2560" y="-469" width="1456" height="1387" key="dock-window-1/2560.-524.1440.2520/0.0.2560.1400@0.0.2560.1400" timestamp="1593604075295" />
+    <state x="823" y="306" width="606" height="768" key="find.popup" timestamp="1593602860887">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="823" y="315" width="606" height="789" key="find.popup/0.0.2560.1440/2560.0.1536.864@0.0.2560.1440" timestamp="1591447662516" />
+    <state x="823" y="306" width="606" height="768" key="find.popup/2560.-524.1440.2520/0.0.2560.1400@0.0.2560.1400" timestamp="1593602860887" />
     <state x="974" y="558" width="665" height="283" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1591808787099">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="974" y="558" width="665" height="283" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591808787099" />
-    <state x="718" y="293" width="1120" height="1099" key="search.everywhere.popup" timestamp="1592435382768">
+    <state x="718" y="293" width="1120" height="1099" key="search.everywhere.popup" timestamp="1593603395271">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="718" y="293" width="1120" height="1099" key="search.everywhere.popup/0.0.2560.1400/-1920.197.1920.1040@0.0.2560.1400" timestamp="1592435382768" />
     <state x="718" y="293" width="1120" height="1099" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592432643593" />
     <state x="2991" y="181" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440/2560.0.1536.864@2560.0.1536.864" timestamp="1591655671702" />
+    <state x="718" y="293" width="1120" height="1099" key="search.everywhere.popup/2560.-524.1440.2520/0.0.2560.1400@0.0.2560.1400" timestamp="1593603395271" />
   </component>
 </project>
