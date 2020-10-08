@@ -89,7 +89,11 @@ a #navbar,a .navbar-nav,a .nav,a .icon-bar,a .navbar-default{
     color:#000084;background-color:#000084
 }
 p,a,li,label{
+<<<<<<< HEAD
     font-size:17px
+=======
+    font-size:24px
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
 }
 form label{
     display:inline-block;

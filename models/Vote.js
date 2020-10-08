@@ -12,7 +12,10 @@ const VoteSchema = new Schema({
         required: true
     }
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
 //Create collection and schema
 const Vote = mongoose.model('Vote', VoteSchema);
 module.exports = Vote;

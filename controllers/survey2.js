@@ -1,12 +1,18 @@
 const Survey = require('../models/Surveys');
 
 exports.getAddSurvey = (req, res, next) => {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
     res.render('ankiety2', {
         pageTitle:'Add Survey',
         path: '/survey2',
         editing: false,
+<<<<<<< HEAD
         isAuthenticated: req.session.isLoggedIn
+=======
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
 
     });
 };

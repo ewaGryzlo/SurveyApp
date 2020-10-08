@@ -13,6 +13,7 @@ const  pusher = new Pusher({
     secret: '1be01233050d763c43e5',
     cluster: 'eu',
     useTLS: true,
+<<<<<<< HEAD
 
 });
 
@@ -22,6 +23,16 @@ router.get('/', (req,res) => {
     Vote.find().then(votes => res.json({success: true,
         votes: votes}));
 
+=======
+});
+
+
+
+
+router.get('/', (req,res) => {
+    Vote.find().then(votes => res.json({success: true,
+        votes: votes}));
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
 });
 
 router.post('/', (req,res) => {

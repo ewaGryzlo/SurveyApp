@@ -95,7 +95,11 @@ function getQuestionnaireForm () {
         .then(response => {
             if (response.status === 200) {
                 alert('Dodano ankietę');
+<<<<<<< HEAD
                 window.location.replace("/");
+=======
+                window.location.replace("/homepage");
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
             } else {
                 console.error(response);
             }

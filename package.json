@@ -6,6 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -31,5 +32,18 @@
   },
   "devDependencies": {
     "dotenv": "^8.0.0"
+=======
+    "body-parser": "^1.19.0",
+    "common-js": "^0.3.8",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.17",
+    "pusher": "^3.0.1",
+    "requirejs": "^2.3.6"
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
   }
 }

@@ -5,6 +5,9 @@
   </component>
   <component name="ProjectPlainTextFileTypeManager">
     <file url="file://$PROJECT_DIR$/public/css/styles2.scss" />
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/views/includes/flashMessages.ejs" />
+=======
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
   </component>
 </project>

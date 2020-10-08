@@ -5,8 +5,12 @@ exports.getAddSurvey = ('/survey', (req, res, next) => {
     res.render('ankiety', {
         pageTitle:'Add Survey',
         path: '/survey',
+<<<<<<< HEAD
         editing: false,
        isAuthenticated: req.session.isLoggedIn
+=======
+        editing: false
+>>>>>>> 88ef58257706174692e5344938894e04b0ef851b
     });
 });
 
