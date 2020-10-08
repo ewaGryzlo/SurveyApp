@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ankiety2</title>
+    <link rel="stylesheet" href="/css/main2.css">
+    <link rel="stylesheet" href="/css/styles3.css">
+
+
+</head>
+
+<body>
+<%- include('./includes/navigation.ejs') %>
+<ul id="form__errors-block">
+</ul>
+<main>
+
+
+<form action="/survey2/" method="POST">
+    <div class="questionAnswer-container">
+
+        <input
+                type="text"
+                id="title"
+                placeholder="Title"
+                class="title__input"
+                name="title"
+                value=""
+        />
+        <div class="question-container">
+            <input
+                    type="text"
+                    id="question"
+                    class="question__input"
+                    placeholder="Question"
+                    name="question"
+                    value=" "
+            />
+        </div>
+        <div class ="answers">
+            <input
+                    type="text"
+                    id = "answer"
+                    class="response__input"
+                    placeholder="Answer"
+                    name="answer"
+                    value=""
+            > <a href="#" class= " btn btn-add"  onclick=" addResponse(this)">+</a>
+            <a href="#"  class= "btn btn-del" onclick=" deleteResponse(this)">-</a>
+        </div>
+        <a href="#"   class= " btn" onclick=" deleteQuestion(this)">Remove Question</a>
+        <br/>
+
+    </div>
+
+
+
+</form>
+<a href="#" class= "btn btn-add" onclick="addQuestion()">Add question</a>
+
+<br/>
+<br/>
+
+<a href="#"   type="submit" class= "btn btn-send" onclick="getQuestionnaireForm()"> Fetch </a>
+
+
+</main>
+</body>
+<script  src="/script2.js"></script>
+<script  src=" https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+</html>

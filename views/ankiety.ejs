@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ankiety</title>
+    <link rel="stylesheet" href="/css/main2.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles2.css">
+<body>
+<%- include('./includes/navigation.ejs') %>
+<div class="container">
+
+    <h1 id="title"></h1>
+    <h3 id="description"></h3>
+    <div class="customNotifications">
+        <div class="alert alert-danger" id="nameFormWarning" role="alert">
+
+        </div>
+        <div class="alert alert-success" id="quizSuccess" role="alert">
+            <p class="nameAlert">Ankieta usunięta&nbsp;<a href="#" class="close nameAlert" data-hide="alert">&times;</a></p>
+        </div>
+        <div class="alert alert-danger" id="quizWarning" role="alert">
+            <p class="nameAlert">Quiz does not exist!&nbsp;<a href="#" class="close nameAlert" data-hide="alert">&times;</a></p>
+        </div>
+        <div class="alert alert-danger" id="placeholderWarning" role="alert">
+            <p class="nameAlert"><span>Placeholder Warning!&nbsp;</span><a href="#" class="close nameAlert" data-hide="alert">&times;</a></p>
+        </div>
+    </div>
+
+    <div class="alert alert-success" id="placeholderSuccess" role="alert">
+        <p class="nameAlert"><span>Placeholder Success!&nbsp;</span><a href="#" class="close nameAlert" data-hide="alert">&times;</a></p>
+    </div>
+    <form id="nameForm" role="form">
+        <div class="form-group">
+
+            <select class="form-control" id="titlesDropdown">
+
+            </select>
+            <br>
+
+            <a href="" id="backHome" class="btn btn-primary btn-sm">Back To Home</a>
+            <input class="btn btn-primary" class="form-control" type="submit" id="start_quiz"value="Uruchom">
+            <input class="btn btn-success" class="form-control" type="submit" id="create_quiz" value="Stwórz ankietę">
+
+        </div>
+
+    </form>
+
+    <form id="editQuizForm" role="form">
+        <div class="form-group editQuizFormDiv" id="editQuiz">
+        </div>
+    </form>
+
+
+    <h3 id="ajaxloading"></h3>
+
+
+    <div class="customNotifications">
+        <div class="alert alert-danger" id="answerWarning" role="alert">
+            <p class="nameAlert">Wpisz nazwę użytkownika&nbsp;<a href="#" class="close nameAlert" data-hide="alert">&times;</a></p>
+        </div>
+    </div>
+    <h3 id="questionNumber"></h3>
+    <h3 id="question"></h3>
+
+
+
+    <br>
+</div>
+<script src="./jquery-2.1.4.min.js"></script>
+<script src="./script.js"></script>
+<%- include('includes/end.ejs') %>

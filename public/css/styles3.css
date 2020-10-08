@@ -1,0 +1,64 @@
+body {
+
+
+    background-color: #ededed;}
+#form__errors-block {
+    color: red;
+}
+input.response__input{
+    display: block;
+}
+.response__input__error {
+    background: orange;
+
+}
+.btn {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font: inherit;
+    border: 1px solid #00695c;
+    color: #00695c;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+    background-color: #00695c;
+    color: white;
+}
+.btn-add{
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font: inherit;
+    border: 1px solid #00695c;
+    color: white;
+    background: #5cd241;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-del{
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font: inherit;
+    border: 1px solid #00695c;
+    color: white;
+    background: red;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-send{
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font: inherit;
+    border: 1px solid #00695c;
+    color: white;
+    background: lightsalmon;
+    border-radius: 3px;
+    cursor: pointer;
+
+}

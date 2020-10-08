@@ -1,0 +1,31 @@
+<div class="backdrop"></div>
+<header class="main-header">
+    <nav class="main-header__nav1">
+        <ul class="main-header__item-list">
+            <li class="main-header__item"><a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a></li>
+            <li class="main-header__item"><a class="<%= path === 'example' ? 'active' : '' %>" href="example">Example</a></li>
+            <% if (isAuthenticated) { %>
+            <li class="main-header__item"><a class="<%= path === 'survey' ? 'active' : '' %>" href="survey">Ankiety</a></li>
+            <li class="main-header__item"><a class="<%= path === 'survey2' ? 'active' : '' %>" href="survey2">Ankiety2</a></li>
+
+            <% } %>
+        </ul>
+        <ul class="main-header__item-list">
+            <% if (!isAuthenticated) { %>
+                    <li class="main-header__item">
+                        <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
+                    </li>
+                    <li class="main-header__item">
+                        <a class="<%= path === '/register' ? 'active' : '' %>" href="/register">Register</a>
+                    </li>
+                <% } else { %>
+                    <li class="main-header__item">
+                        <form action="/logout" method="post">
+                            <button type="submit">Logout</button>
+                        </form>
+                    </li>
+                <% } %>
+            </ul>
+        </ul>
+    </nav>
+</header>
