@@ -1,3 +1,4 @@
 # SurveyApp
-Simple survey app 
+Simple survey app with survey creator.
+
 Unfinished project.
